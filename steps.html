@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing page AXA</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-5">Landing page AXA <small class="text-muted">(27 septembre 2019)</small></h1>
+
+    <div class="row mb-3">
+      <div class="col">
+        <h2><span class="text-muted">Step 1 - </span>Setup</h2>
+        <pre class="bg-dark pl-4">
+          <code class="text-white">
+- index.html
+- style.css
+- images/
+          </code>
+        </pre>
+        <p>Download images <a href="https://github.com/grmnlrt/axa-images/archive/master.zip">here</a></p>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <h2><span class="text-muted">Step 2 - </span>HTML Skeleton</h2>
+        <pre class="bg-dark pl-4">
+          <code class="text-white">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+  &lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>Your page title&lt;/title>
+  &lt;/head>
+  &lt;body>
+
+  &lt;/body>
+&lt;/html>
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <h2><span class="text-muted">Step 3 - </span>HTML Content</h2>
+        <pre class="bg-dark pl-4">
+          <code class="text-white">
+&lt;img src="images/axa-logo.png" alt="">
+&lt;h1>Vous venez d'être recruté chez AXA ?&lt;/h1>
+&lt;h2>Permettez-nous de prendre soin de vous !&lt;/h2>
+&lt;a href="#">je veux être contacté.e&lt;/a>
+
+&lt;h1>Nos solutions&lt;/h1>
+
+&lt;img src="images/auto.png" alt="" class="icon">
+&lt;h3>Assurance Auto&lt;/h3>
+&lt;p>...&lt;/p>
+
+
+&lt;img src="images/bancaire.png" alt="" class="icon">
+&lt;h3>Assurance Vie&lt;/h3>
+&lt;p>...&lt;/p>
+
+&lt;img src="images/habitation.png" alt="" class="icon">
+&lt;h3>Assurance Habitation&lt;/h3>
+&lt;p>...&lt;/p>
+
+&lt;img src="images/maladie.png" alt="" class="icon">
+&lt;h3>Complémentaire santé&lt;/h3>
+&lt;p>...&lt;/p>
+
+&lt;p>AXA Landing Page / 2019&lt;/p>
+&lt;ul class="social-icons">
+  &lt;li>
+    &lt;a href="">facebook&lt;/a>
+  &lt;/li>
+  &lt;li>
+    &lt;a href="">twitter&lt;/a>
+  &lt;/li>
+  &lt;li>
+    &lt;a href="">mail&lt;/a>
+  &lt;/li>
+&lt;/ul>
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <h2><span class="text-muted">Step 4 - </span>Add CSS</h2>
+        <pre class="bg-dark pl-4">
+          <code class="text-white">
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+}
+
+h2 {
+  color: #ECEDF2;
+}
+
+i {
+  color: #DBDBDB;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 5px;
+}
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <h2><span class="text-muted">Step 5 - </span>Add divs</h2>
+        <pre class="bg-dark pl-4">
+          <code class="text-white">
+&lt;div>
+  &lt;img src="images/axa-logo.png" alt="">
+  &lt;h1>Vous venez d'être recruté chez AXA ?&lt;/h1>
+  &lt;h2>Permettez-nous de prendre soin de vous !&lt;/h2>
+  &lt;a href="#">je veux être contacté.e&lt;/a>
+&lt;/div>
+
+&lt;h1>Nos solutions&lt;/h1>
+
+&lt;div>
+  &lt;img src="images/auto.png" alt="" class="icon">
+  &lt;h3>Assurance Auto&lt;/h3>
+  &lt;p>...&lt;/p>
+&lt;/div>
+
+&lt;div>
+  &lt;img src="images/bancaire.png" alt="" class="icon">
+  &lt;h3>Assurance Vie&lt;/h3>
+  &lt;p>...&lt;/p>
+&lt;/div>
+
+&lt;div>
+  &lt;img src="images/habitation.png" alt="" class="icon">
+  &lt;h3>Assurance Habitation&lt;/h3>
+  &lt;p>...&lt;/p>
+&lt;/div>
+
+&lt;div>
+  &lt;img src="images/maladie.png" alt="" class="icon">
+  &lt;h3>Complémentaire santé&lt;/h3>
+  &lt;p>...&lt;/p>
+&lt;div>
+
+&lt;div>
+  &lt;p>AXA Landing Page / 2019&lt;/p>
+  &lt;ul class="social-icons">
+    &lt;li>
+      &lt;a href="">facebook&lt;/a>
+    &lt;/li>
+    &lt;li>
+      &lt;a href="">twitter&lt;/a>
+    &lt;/li>
+    &lt;li>
+      &lt;a href="">mail&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+&lt;div>
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col">
+        <h2><span class="text-muted">Step 4 - </span>Add CSS</h2>
+        <pre class="bg-dark pl-4">
+          <code class="text-white">
+.banner {
+  text-align: center;
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("images/axa-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
+}
+
+.banner h1 {
+  margin-bottom: 20px;
+}
+
+.banner img {
+  height: 100px;
+}
+          </code>
+        </pre>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
